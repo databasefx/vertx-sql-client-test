@@ -8,6 +8,14 @@ import io.vertx.sqlclient.Row;
 
 import java.util.List;
 
+/**
+ * This test method is used to reproduce the problem that vertx PG client cannot correctly
+ * resolve some specified values of PG database time and date,Relation pg document please visit:
+ * <a href='https://www.postgresql.org/docs/12/datatype-datetime.html#DATATYPE-DATETIME-SPECIAL-TABLE'/>
+ * </p>
+ *
+ * @author yangkui
+ */
 public class PgDateTimeSpeValTest {
     private static final Vertx VERTX = Vertx.vertx();
     private static final PgConnectOptions CON_OPTIONS = new PgConnectOptions()
