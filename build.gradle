@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+mainClassName = 'cn.navigational.vertx.client.test.PgDateTimeSpeValTest'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.vertx', name: 'vertx-core', version: '4.0.0.Beta3'
+    compile group: 'io.vertx', name: 'vertx-pg-client', version: '4.0.0.Beta3'
+}
